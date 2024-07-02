@@ -23,8 +23,7 @@ html {
 
 .container {
     max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 30px auto;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -60,6 +59,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
+    margin-top: 0px;
 }
 
 .logo {
@@ -67,7 +67,14 @@ html {
 }
 
 .nav-list {
-    gap: 10px;
+    margin-left: 40px;
+    gap: 30px;
+}
+
+.nav-item {
+    width: 107px;
+    height: 37px;
+    padding: 2px 5px;
 }
 
 .nav-lnk {
@@ -98,7 +105,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; 
-    background-image: url(/img/hero.jpg);
+    background-image: url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
     min-height: 800px;
@@ -130,43 +137,52 @@ html {
 /* Books */
 
 .section-heading {
-    margin-bottom: 20px;
+    margin: 20px auto;
     font-size: 70px;
 }
 
 .section-description {
     font-size: 25px;
+    margin: 20px auto;
 }
 
 .section-books {
     border-bottom: 1px solid gray;
-    padding-bottom: 120px;
-    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
 }
 
 .section-description {
-    margin-top: 25px;
+    margin: 20px 0;
 }
 
 .section-books-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 50px;
 }
 
-li {
+.col-4 {
     outline: 2px solid grey;
-    gap: 5px;
+    padding: 0px;
+    width: 370px;
 }
 
-li:hover {
+.col-4:not(:last-child) {
+    margin-right: 30px;
+}
+
+.col-4:hover {
     outline: 8px solid rgb(255, 204, 0);
+}
+
+.books-item {
+    flex: 1 1 33.33%;
 }
 
 .section-books-img {
     border-bottom: 1px solid grey;
-    width: 1000px;
+    width: 370px;
     height: 500px;
 }
 
@@ -178,6 +194,7 @@ li:hover {
 
 .section-books-item-description {
     color: black;
+    padding: 0 10px;
 }
 
 /* Reviews */
@@ -246,18 +263,17 @@ li:hover {
 .section-contacts-item {
     display: inline-block;
     width: 30%;
-    padding: 5px 5px 5px 40px;
+    padding: 5px 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
 
 .section-contacts-item:not(:last-child) {
-    margin-right: 70px;
-    margin-left: -8%;
+
 }
 
 .section-contacts-icon {
-    margin-left: 55px;
+    margin-left: -15px;
     float: left;
 }
 
@@ -300,9 +316,8 @@ li:hover {
     display: flex;
 }
 
-.nav-item:not(:last-child) {
-    margin-right: 50px;
-    margin-left: 30px;
+.nav-item-footer:not(:last-child) {
+    margin: 0 40px;
 }
 
 .footer-burger-menu {
