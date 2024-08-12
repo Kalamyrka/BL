@@ -60,6 +60,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
+    margin-top: 0px;
 }
 
 .logo {
@@ -67,7 +68,13 @@ html {
 }
 
 .nav-list {
-    gap: 10px;
+    margin-left: 40px;
+    gap: 30px;
+}
+
+.nav-item {
+    height: 37px;
+    padding: 10px 5px;
 }
 
 .nav-lnk {
@@ -93,6 +100,49 @@ html {
 }
 
 /* Hero */
+
+.section-hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-item {
+    display: flex;
+    flex: 1 1 50%;
+}
+
+.book-img {
+    width: 50%;
+    /* height: 900px; */
+    margin-bottom: 20px;
+}
+
+.book-description {
+    margin-left: 30px;
+    width: 50%;
+}
+
+.section-books-item-description {
+    font-size: 25px;
+    padding: 0px 15px;
+    margin: 0px 15px 20px;
+}
+
+.additional-information {
+    font-size: 30px;
+    font-style: italic;
+    padding: 0px 15px;
+    margin: 0px 15px 20px;
+}
+
+.additional-information-item {
+    margin: 10px 0;
+}
+
+.additional-information-description {
+    font-size: 25px;
+    color: blue;
+}
 
 /* Reviews */
 
@@ -124,9 +174,8 @@ html {
     display: flex;
 }
 
-.nav-item:not(:last-child) {
-    margin-right: 50px;
-    margin-left: 30px;
+.nav-item-footer:not(:last-child) {
+    margin: 0 40px;
 }
 
 .footer-burger-menu {

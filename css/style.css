@@ -72,9 +72,8 @@ html {
 }
 
 .nav-item {
-    width: 107px;
     height: 37px;
-    padding: 2px 5px;
+    padding: 10px 5px;
 }
 
 .nav-lnk {
@@ -150,6 +149,7 @@ html {
     border-bottom: 1px solid gray;
     padding-bottom: 20px;
     margin-top: 20px;
+    min-height: 800px;
 }
 
 .section-description {
@@ -166,6 +166,7 @@ html {
     outline: 2px solid grey;
     padding: 0px;
     width: 370px;
+    height: 500px;
 }
 
 .col-4:not(:last-child) {
@@ -173,10 +174,11 @@ html {
 }
 
 .col-4:hover {
-    outline: 8px solid rgb(255, 204, 0);
+    /* outline: 8px solid rgb(255, 204, 0); */
 }
 
 .books-item {
+    position: relative;
     flex: 1 1 33.33%;
 }
 
@@ -185,6 +187,64 @@ html {
     width: 370px;
     height: 500px;
 }
+
+.top-left {
+    color: white;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    width: 150px;
+    height: 40px;
+    padding: 10px 5px;
+    background-color: blue;
+}
+
+    /* Кнопка выпадающего списка */
+    .dropbtn {
+        width: 370px;
+        background-color: blue;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /* Кнопка выпадающего меню при наведении и фокусировке */
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: rgb(34, 2, 152);
+    }
+    
+    /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Выпадающее содержимое (скрыто по умолчанию) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        padding-bottom: 10px;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* Ссылки внутри выпадающего списка */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Изменение цвета выпадающих ссылок при наведении курсора */
+    .dropdown-content a:hover {background-color: #ddd}
+    
+    /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+    .show {display:block;}
 
 .section-books-item-name {
     font-weight: bold;
@@ -273,7 +333,7 @@ html {
 }
 
 .section-contacts-icon {
-    margin-left: -15px;
+    margin-left: -15px  ;
     float: left;
 }
 
@@ -288,6 +348,12 @@ html {
 .section-contacts-lnk:hover {
     color: red;
 }
+
+.map {
+    width: 1280px;
+    height: 600px;
+}
+
 /* Footer */
 
 .footer {
